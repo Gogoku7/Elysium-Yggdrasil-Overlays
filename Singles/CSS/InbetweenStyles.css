@@ -1,0 +1,133 @@
+body
+{
+	width: 1920px;
+	height: 1080px;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-image: url(../InbetweenTemplate/InbetweenBackground.png);
+}
+
+span
+{
+	color: white;
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+#slideshow 
+{
+	width: 200px;
+	height: 200px;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	left: 220px;
+	top: 50px;
+}
+
+#slideshow > div
+{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+}
+
+#slideshow > div > img
+{
+	width: 200px;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.playerScoreBox
+{
+	width: 48px;
+	height: 48px;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	line-height: 48px;
+	text-align: center;
+    overflow: hidden;
+}
+
+#player2ScoreBox
+{
+	left: 787px;
+	top: 650px;
+}
+
+#player1ScoreBox
+{
+	left: 1725px;
+	top: 650px;
+}
+
+.playerPort
+{
+	width: 90px;
+	height: 50px;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+
+#player2Port
+{
+	left: 840px;
+	top: 649px;
+}
+
+#player1Port
+{
+	left: 1630px;
+	top: 649px;
+}
+
+.playerCharacter
+{
+	width: 90px;
+	height: 50px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.playerNameContainer
+{
+	width: 288px;
+	height: 48px;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	line-height: 48px;
+    overflow: hidden;
+	text-align: center;
+}
+
+#player2NameContainer
+{
+	left: 935px;
+	top: 650px;
+}
+
+#player1NameContainer
+{
+	left: 1337px;
+	top: 650px;
+}
+
+.changing 
+{
+    transition-duration: 0.5s;
+    transition-property: opacity;
+    opacity: 0 !important;
+}
+
+.changed 
+{
+    transition-duration: 0.5s;
+    transition-property: opacity;
+}

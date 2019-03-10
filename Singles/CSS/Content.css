@@ -1,0 +1,55 @@
+#player1NameText:before {
+    content: "Cinnovate | Gogoku7";
+}
+
+#player1TwitterText:before {
+    content: "";
+}
+
+#player1ScoreText:before {
+    content: "0";
+}
+
+#player1Character {
+    background-image: url('../../CharacterIcons/diddykong.png');
+}
+
+#player1Port {
+    background-image: url('../../PlayerPorts/PlayerPort2.png');
+}
+
+#player2NameText:before {
+    content: "NRG | Nairo";
+}
+
+#player2TwitterText:before {
+    content: "";
+}
+
+#player2ScoreText:before {
+    content: "0";
+}
+
+#player2Character {
+    background-image: url('../../CharacterIcons/zerosuitsamus.png');
+}
+
+#player2Port {
+    background-image: url('../../PlayerPorts/PlayerPort3.png');
+}
+
+#tournamentText:before {
+    content: "";
+}
+
+#extraText:before {
+    content: "";
+}
+
+#roundText:before {
+    content: "";
+}
+
+#bestOfText:before {
+    content: "";
+}

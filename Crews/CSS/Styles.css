@@ -1,0 +1,701 @@
+body
+{
+	width: 1920px;
+	height: 1080px;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+#wrapper
+{
+	margin-top: 702px;
+}
+
+span
+{
+	color: white;
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+/* crews */
+
+.crews
+{
+	width: 1920px;
+	height: 360px;
+}
+
+/* crews END*/
+
+
+
+/* crew */
+
+.crew
+{
+	width: 960px;
+	height: 360px;
+}
+
+#crew1
+{
+	float: left;
+}
+
+#crew2
+{
+	float: right;
+}
+
+/* crew END */
+
+
+
+/* crewBox */
+
+.crewBox
+{
+	width: 300px;
+	height: 360px;
+}
+
+#crew1Box
+{
+	float: left;
+	background-image: url('../CrewBackgrounds/Crew1Background.png');
+}
+
+#crew2Box
+{
+	float: right;
+	background-image: url('../CrewBackgrounds/Crew2Background.png');
+}
+
+/* crewBox END */
+
+
+/* crewRow */
+
+.crewRow
+{
+	width: 290px;
+	height: 50px;
+	padding: 5px;
+}
+
+/* crewRow END */
+
+
+
+/* crewScoreBox */
+
+.crewScoreBox
+{
+	width: 48px;
+	height: 48px;
+	padding: 1px;
+    overflow: hidden;
+	text-align: center;
+	background: white;
+	opacity: 0;
+	
+	animation-name: fadeIn;
+	animation-duration: 1.8s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+#crew1ScoreBox
+{
+	float: left;
+}
+
+#crew2ScoreBox
+{
+	float: right;
+}
+
+/* crewScoreBox END */
+
+
+
+/* crewScoreContainer */
+
+.crewScoreContainer
+{
+	width: 46px;
+	height: 46px;
+	padding: 1px;
+	line-height: 46px;
+	opacity: 0;
+	background-image: url('../CrewBackgrounds/ScoreBackground.png');
+	
+	animation-name: fadeIn;
+	animation-duration: 1.8s;
+	animation-delay: 0.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+/* crewScoreContainer END */
+
+
+
+/* crewStocksLeft */
+
+.crewStocksLeft
+{
+	opacity: 0;
+	
+	animation-name: fadeIn;
+	animation-duration: 2.2s;
+	animation-delay: 3.7s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	
+}
+
+/* crewStocksLeft END */
+
+
+
+/* crewNameBox */
+
+.crewNameBox
+{
+	width: 138px;
+	height: 48px;
+	padding: 1px;
+    overflow: hidden;
+	text-align: center;
+	background: white;
+	opacity: 0;
+	
+	animation-name: fadeIn;
+	animation-duration: 1.8s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+#crew1NameBox
+{
+	float: left;
+	margin-left: 5px;
+}
+
+#crew2NameBox
+{
+	float: right;
+	margin-right: 5px;
+}
+
+/* crewNameBox END */
+
+
+
+/* crewNameContainer */
+
+.crewNameContainer
+{
+	width: 136px;
+	height: 46px;
+	padding: 1px;
+	line-height: 46px;
+	opacity: 0;
+	background-image: url('../CrewBackgrounds/CrewBackground.png');
+	
+	animation-name: fadeIn;
+	animation-duration: 1.8s;
+	animation-delay: 0.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+/* crewNameContainer END */
+
+
+/*  crewName */
+
+.crewName
+{
+	opacity: 0;
+	
+	animation-name: fadeIn;
+	animation-duration: 2.2s;
+	animation-delay: 3.7s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+/* .crewName END */
+
+
+
+/* crewPort */
+
+.crewPort
+{
+	width: 90px;
+	height: 50px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	opacity: 0;
+	
+	animation-name: fadeIn;
+	animation-duration: 1.8s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+#crew1Port
+{
+	float: left;
+	margin-left: 5px;
+}
+
+#crew2Port
+{
+	float: right;
+	margin-right: 5px;
+}
+
+/* crewPortEND */
+
+
+
+/* crewCharacter */
+
+.crewCharacter
+{
+	width: 90px;
+	height: 50px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0;
+	
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-delay: 4.9s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+/* crewCharacter END */
+
+
+
+/* crewPlayerBox */
+
+.crewPlayerBox
+{
+	width: 288px;
+	height: 48px;
+	padding: 1px;
+    overflow: hidden;
+	text-align: center;
+	background: white;
+	opacity: 0;
+	
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+#crew1 > div > div .crewPlayerBox
+{
+	animation-name: slideInFromLeft;
+}
+
+#crew1Player1Box
+{
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+#crew1Player2Box
+{
+	animation-duration: 2.3s;
+	animation-delay: 0.3s;
+}
+
+#crew1Player3Box
+{
+	animation-duration: 2.6s;
+	animation-delay: 0.6s;
+}
+
+#crew1Player4Box
+{
+	animation-duration: 2.9s;
+	animation-delay: 0.9s;
+}
+
+#crew1Player5Box
+{
+	animation-duration: 3.2s;
+	animation-delay: 1.2s;
+}
+
+#crew2 > div > div .crewPlayerBox
+{
+	animation-name: slideInFromRight;
+}
+
+#crew2Player1Box
+{
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+#crew2Player2Box
+{
+	animation-duration: 2.3s;
+	animation-delay: 0.3s;
+}
+
+#crew2Player3Box
+{
+	animation-duration: 2.6s;
+	animation-delay: 0.6s;
+}
+
+#crew2Player4Box
+{
+	animation-duration: 2.9s;
+	animation-delay: 0.9s;
+}
+
+#crew2Player5Box
+{
+	animation-duration: 3.2s;
+	animation-delay: 1.2s;
+}
+
+#crew2 > div > div .crewPlayerBox
+{
+	animation-name: slideInFromRight;
+}
+
+/* crewPlayerBox END */
+
+
+
+/* crewPlayerNameContainer */
+
+.crewPlayerNameContainer
+{
+	width: 286px;
+	height: 46px;
+	padding: 1px;
+	line-height: 46px;
+	opacity: 0;
+	background-image: url('../CrewBackgrounds/PlayerBackground.png');
+	
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+#crew1 > div > div > div > .crewPlayerNameContainer
+{
+	animation-name: slideInFromLeft;
+}
+
+#crew1Player1NameContainer
+{
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+}
+
+#crew1Player2NameContainer
+{
+	animation-duration: 2.2s;
+	animation-delay: 0.7s;
+}
+
+#crew1Player3NameContainer
+{
+	animation-duration: 2.4s;
+	animation-delay: 0.9s;
+}
+
+#crew1Player4NameContainer
+{
+	animation-duration: 2.6s;
+	animation-delay: 1.1s;
+}
+
+#crew1Player5NameContainer
+{
+	animation-duration: 2.8s;
+	animation-delay: 1.3s;
+}
+
+#crew2 > div > div > div > .crewPlayerNameContainer
+{
+	animation-name: slideInFromRight;
+}
+
+#crew2Player1NameContainer
+{
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+}
+
+#crew2Player2NameContainer
+{
+	animation-duration: 2.2s;
+	animation-delay: 0.7s;
+}
+
+#crew2Player3NameContainer
+{
+	animation-duration: 2.4s;
+	animation-delay: 0.9s;
+}
+
+#crew2Player4NameContainer
+{
+	animation-duration: 2.6s;
+	animation-delay: 1.1s;
+}
+
+#crew2Player5NameContainer
+{
+	animation-duration: 2.8s;
+	animation-delay: 1.3s;
+}
+
+/* crewPlayerNameContainer END */
+
+
+
+/* crewPlayerName */
+
+.crewPlayerName
+{
+	opacity: 0;
+	animation-name: fadeIn;
+	
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+#crew1Player1NameText
+{
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+}
+
+#crew1Player2NameText
+{
+	animation-duration: 1.3s;
+	animation-delay: 2.8s;
+}
+
+#crew1Player3NameText
+{
+	animation-duration: 1.6s;
+	animation-delay: 3.1s;
+}
+
+#crew1Player4NameText
+{
+	animation-duration: 1.9s;
+	animation-delay: 3.4s;
+}
+
+#crew1Player5NameText
+{
+	animation-duration: 2.2s;
+	animation-delay: 3.7s;
+}
+
+#crew2Player1NameText
+{
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+}
+
+#crew2Player2NameText
+{
+	animation-duration: 1.3s;
+	animation-delay: 2.8s;
+}
+
+#crew2Player3NameText
+{
+	animation-duration: 1.6s;
+	animation-delay: 3.1s;
+}
+
+#crew2Player4NameText
+{
+	animation-duration: 1.9s;
+	animation-delay: 3.4s;
+}
+
+#crew2Player5NameText
+{
+	animation-duration: 2.2s;
+	animation-delay: 3.7s;
+}
+
+/* crewPlayerName END */
+
+
+/* tournamentInfo */
+
+.tournamentInfo
+{
+    width: 1920px;
+    height: 18px;
+}
+
+/* tournamentInfo END */
+
+
+
+/* info */
+
+.info
+{
+    width: 960px;
+    height: 18px;
+}
+
+#infoRound
+{
+    float: left;
+}
+
+#infoTournament
+{
+    float: right;
+}
+
+/* info END */
+
+
+
+/* infoBox */
+
+.infoBox
+{
+    width: 300px;
+    height: 19px;
+	opacity: 0;
+    text-align: center;
+    background-image: url('../BoxBackground/InfoBoxBackground.png');
+	
+	animation-duration: 1s;
+	animation-delay: 5.9s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+#infoRoundBox
+{
+    float: left;
+	
+	animation-name: slideInFromLeft;
+}
+
+#infoTournamentBox
+{
+    float: right;
+	
+	animation-name: slideInFromRight;
+}
+
+/* infoBox END */
+
+
+
+/* boxText */
+
+.boxText
+{
+    width: auto;
+    margin: 0px;
+    white-space: nowrap;
+    color: white;
+	opacity: 0;
+	
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-delay: 6.9s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+/* BoxText END */
+
+
+
+/* animations */
+
+.changing 
+{
+    transition-duration: 0.5s;
+    transition-property: opacity;
+    opacity: 0 !important;
+}
+
+.changed 
+{
+    transition-duration: 0.5s;
+    transition-property: opacity;
+}
+
+@keyframes slideInFromLeft
+{
+	0% 
+	{
+		transform: translateX(-110%);
+		opacity: 0;
+	}
+	100%
+	{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideInFromRight
+{
+	0% 
+	{
+		transform: translateX(110%);
+		opacity: 0;
+	}
+	100%
+	{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn
+{
+    0%
+	{
+		opacity:0;
+	}
+    100%
+	{
+		opacity:1;
+	}
+}
+
+/* animations END */

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/InbetweenStyles.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Content.css">
+        <script src="../../JavaScript/jQuery.js"></script>
+        <script src="../../JavaScript/fitty.js"></script>
+    </head>
+	<body>
+		<div id="wrapper">
+			<div id="slideshow">
+				<div>
+					<img src="TournamentSponsors/AFK.png">
+				</div>
+				<div>
+					<img src="TournamentSponsors/BYOController.jpg">
+				</div>
+				<div>
+					<img src="TournamentSponsors/Dominos.png">
+				</div>
+				<div>
+					<img src="TournamentSponsors/GameMania.png">
+				</div>
+				<div>
+					<img src="TournamentSponsors/PowerRanking.png">
+				</div>
+				<div>
+					<img src="TournamentSponsors/Zowie.png">
+				</div>
+			</div>
+		</div>
+		
+		<div class="playerScoreBox" id="player2ScoreBox">
+			<span class="playerScore" id="player2ScoreText"></span>
+		</div>
+		
+		<div class="playerPort" id="player2Port">
+			<div class="playerCharacter" id="player2Character"></div>
+		</div>
+		
+		<div class="playerNameContainer" id="player2NameContainer">
+			<span class="playerName" id="player2NameText"></span>
+		</div>
+		
+		<div class="playerNameContainer" id="player1NameContainer">
+			<span class="playerName" id="player1NameText"></span>
+		</div>
+		
+		<div class="playerPort" id="player1Port">
+			<div class="playerCharacter" id="player1Character"></div>
+		</div>
+		
+		<div class="playerScoreBox" id="player1ScoreBox">
+			<span class="playerScore" id="player1ScoreText"></span>
+		</div>
+	</body>
+</html>
+
+<script>
+	$("#slideshow > div:gt(0)").hide();
+
+	setInterval(function() {
+	  $('#slideshow > div:first')
+		.fadeOut(1000)
+		.next()
+		.fadeIn(1000)
+		.end()
+		.appendTo('#slideshow');
+	}, 6000);
+	
+	$(document).ready(function () {
+        fitty('.playerName', { minSize: 8, maxSize: 28, multiLine: false });
+        fitty('.playerScore', { minSize: 8, maxSize: 35, multiLine: false });
+
+        var uri = "ws://localhost:56613/WebSocket/Queu";
+
+        websocket = new WebSocket(uri);
+
+        websocket.onopen = function () {
+            console.log("Connected to server.");
+            var jsonData = { "type": "overlayConnected", "data": window.location.href };
+            websocket.send(JSON.stringify(jsonData));
+        };
+
+        websocket.onerror = function (event) {
+            console.log("Something went wrong");
+        };
+
+        websocket.onmessage = function (event) {
+            console.log(event.data);
+
+            var jsonData = JSON.parse(event.data);
+
+            if (jsonData.type == "queu") {
+				$(".playerName").css("animation-fill-mode", "none");
+				$(".playerName").css("opacity", 1);
+				$(".playerScore").css("animation-fill-mode", "none");
+				$(".playerScore").css("opacity", 1);
+				
+                $.each(jsonData.data, function (i) {
+                    $(jsonData.data[i]).addClass("changing");
+                });
+
+                setTimeout(function () {
+                    var queryString = '?reload=' + new Date().getTime();
+                    $('link[rel="stylesheet"]').not('link[href="css/styles.css"]').each(function () {
+                        this.href = this.href.replace(/\?.*|$/, queryString);
+                    });
+
+                    fitty('.playerName', { minSize: 8, maxSize: 28, multiLine: false });
+					fitty('.playerScore', { minSize: 8, maxSize: 35, multiLine: false });
+
+                    $.each(jsonData.data, function (i) {
+                        $(jsonData.data[i]).removeClass("changing").addClass("changed");
+                    });
+
+                    setTimeout(function () {
+                        $.each(jsonData.data, function (i) {
+                            $(jsonData.data[i]).removeClass("changed");
+                        });
+                    }, 500);
+                }, 500);
+            }
+            else if (jsonData.type == "forceResize") {
+				$(".playerName").css("animation-fill-mode", "none");
+				$(".playerName").css("opacity", 1);
+                $(".playerName").addClass("changing");
+				$(".playerScore").css("animation-fill-mode", "none");
+				$(".playerScore").css("opacity", 1);
+                $(".playerScore").addClass("changing");
+                setTimeout(function () {
+                    fitty('.playerName', { minSize: 8, maxSize: 28, multiLine: false });
+					fitty('.playerScore', { minSize: 8, maxSize: 35, multiLine: false });
+
+                    $(".playerName").removeClass("changing").addClass("changed");
+                    $(".playerScore").removeClass("changing").addClass("changed");
+
+                    setTimeout(function () {
+                        $(".playerName").removeClass("changed");
+                        $(".playerScore").removeClass("changed");
+                    }, 500);
+                }, 500);
+            }
+        };
+    });
+
+    $(window).on("beforeunload", function () {
+        var jsonData = { "type": "overlayDisconnected", "data": window.location.href };
+        websocket.send(JSON.stringify(jsonData));
+        websocket.close();
+    });
+</script>

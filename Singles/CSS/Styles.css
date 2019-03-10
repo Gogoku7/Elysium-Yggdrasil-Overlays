@@ -1,0 +1,350 @@
+body
+{
+	width: 1920px;
+	height: 1080px;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+span
+{
+	color: white;
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+/* players */
+
+.players
+{
+	width: 1920px;
+	height: 110px;
+	background-image: url('../PlayerBackgrounds/PlayersBackground.png');
+	
+	animation-name: fadeIn;
+	animation-duration: 0.5s;
+	animation-delay: 0s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+/* players END*/
+
+
+
+/* player */
+
+.player
+{
+	width: 960px;
+	height: 110px;
+	opacity: 0;
+	
+	animation-name: fadeIn;
+	animation-duration: 1.8s;
+	animation-delay: 0.5s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+#player1
+{
+	float: left;
+	background-image: url('../PlayerBackgrounds/Player1Background.png');
+}
+
+#player2
+{
+	float: right;
+	background-image: url('../PlayerBackgrounds/Player2Background.png');
+}
+
+/* player END */
+
+
+
+/* playerBox */
+
+.playerBox
+{
+	width: 650px;
+	height: 50px;
+	margin-top: 54px;
+	overflow: hidden;
+	opacity: 0;
+	
+	animation-name: fadeIn;
+	animation-duration: 2.2s;
+	animation-delay: 1s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+#player1Box
+{
+	float: right;
+	background-image: url('../PlayerBackgrounds/Player1BoxBackground.png');
+}
+
+#player2Box
+{
+	float: left;
+	background-image: url('../PlayerBackgrounds/Player2BoxBackground.png');
+}
+
+/* playerBox END */
+
+
+
+/* playerScoreBox */
+
+.playerScoreBox 
+{
+    width: 51px;
+    height: 50px;
+    line-height: 50px;
+	text-align: center;
+    overflow: hidden;
+}
+
+#player1ScoreBox
+{
+	float: left;
+	margin-left: -2px;
+}
+
+#player2ScoreBox
+{
+	float: right;
+	margin-right: -2;
+}
+
+/* playerScoreBox END */
+
+
+
+/* playerScore */
+
+.playerScore
+{
+	margin: 0;
+}
+
+/* playerScore END */
+
+
+
+/* playerPort */
+
+.playerPort
+{
+	width: 90px;
+	height: 50px;
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+
+#player1Port
+{
+	float: left;
+	margin-left: 5px;
+}
+
+#player2Port
+{
+	float: right;
+	margin-right: 2px;
+}
+
+/* playerPort END */
+
+
+
+/* playerCharacter */
+
+.playerCharacter
+{
+	width: 90px;
+	height: 50px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* playerCharacterEnd */
+
+
+
+/* playerNameBox */
+
+.playerNameBox
+{
+	width: 350px;
+	height: 50px;
+}
+
+#player1NameBox
+{
+	float: left;
+	margin-left: 20px;
+}
+
+#player2NameBox
+{
+	float: right;
+	margin-right: 20px;
+}
+
+/* playerNameBox END */
+
+
+
+/* playerNameContainer */
+
+.playerNameContainer 
+{
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+	text-align: center;
+}
+
+#player1NameContainer 
+{
+    float: left;
+}
+
+#player2NameContainer 
+{
+    float: right;
+}
+
+/* playerNameContainer END */
+
+
+
+/* playerName */
+
+.playerName
+{
+	margin: 0;
+}
+
+/* playerName END*/
+
+
+/* tournamentInfo */
+
+.tournamentInfo
+{
+	width: 1920px;
+	height: 18px;
+}
+
+/* tournamentInfo END */
+
+
+
+/* info */
+
+.info
+{
+	width: 960px;
+	height: 18px;
+}
+
+#infoRound
+{
+	float: left;
+}
+
+#infoTournament
+{
+	float: right;
+}
+
+/* info END */
+
+
+
+/* infoBox */
+
+.infoBox
+{
+	width: auto;
+	height: 18px;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: center;
+	opacity: 0;
+	background-image: url('../BoxBackground/InfoBoxBackground.png');
+	
+	animation-name: fadeIn;
+	animation-duration: 2.2s;
+	animation-delay: 1s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+#infoRoundBox
+{
+	float: right;
+}
+
+#infoTournamentBox
+{
+	float: left;
+}
+
+/* infoBox END */
+
+
+
+/* boxText */
+
+.boxText
+{
+	width: auto;
+	margin: 0px;
+	white-space: nowrap;
+	color: white;
+}
+
+/* BoxText END */
+
+
+
+/* animations */
+
+.changing 
+{
+    transition-duration: 0.5s;
+    transition-property: opacity;
+    opacity: 0 !important;
+}
+
+.changed 
+{
+    transition-duration: 0.5s;
+    transition-property: opacity;
+}
+
+@keyframes showPlayerBox
+{
+	0% { width:0% }
+	100% { width:67.70833333333333% }
+}
+
+@keyframes fadeIn
+{
+    0%
+	{
+		opacity:0;
+	}
+    100%
+	{
+		opacity:1;
+	}
+}
+
+/* animations END */

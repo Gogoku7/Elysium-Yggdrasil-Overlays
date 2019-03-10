@@ -1,0 +1,42 @@
+body
+{
+	width: 1920px;
+	height: 1080px;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-image: url(../InbetweenTemplate/InbetweenBackground.png);
+}
+
+span
+{
+	color: white;
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+#slideshow 
+{
+	width: 100px;
+	height: 100px;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	z-index: 1;
+	left: 50px;
+	top: 50px;
+}
+
+#slideshow > div
+{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+
+#slideshow > div > img
+{
+	width: 100px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}

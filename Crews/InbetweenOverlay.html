@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/InbetweenStyles.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Content.css">
+        <script src="../../JavaScript/jQuery.js"></script>
+        <script src="../../JavaScript/fitty.js"></script>
+    </head>
+	<body>
+		<div id="wrapper">
+			<div id="slideshow">
+				<div>
+					<img src="TournamentSponsors/AFK.png">
+				</div>
+				<div>
+					<img src="TournamentSponsors/BYOController.jpg">
+				</div>
+				<div>
+					<img src="TournamentSponsors/Dominos.png">
+				</div>
+				<div>
+					<img src="TournamentSponsors/GameMania.png">
+				</div>
+				<div>
+					<img src="TournamentSponsors/PowerRanking.png">
+				</div>
+				<div>
+					<img src="TournamentSponsors/Zowie.png">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	$("#slideshow > div:gt(0)").hide();
+
+	setInterval(function() {
+	  $('#slideshow > div:first')
+		.fadeOut(1000)
+		.next()
+		.fadeIn(1000)
+		.end()
+		.appendTo('#slideshow');
+	}, 6000);
+</script>

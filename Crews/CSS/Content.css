@@ -1,0 +1,91 @@
+#crew1NameText:before {
+    content: "World";
+}
+
+#crew1Player1NameText:before {
+    content: "VoiD";
+    color: yellow;
+}
+#crew1Player2NameText:before {
+    content: "Larry lurr";
+    color: red;
+}
+#crew1Player3NameText:before {
+    content: "MKLeo";
+    color: red;
+}
+#crew1Player4NameText:before {
+    content: "ZeRo";
+}
+#crew1Player5NameText:before {
+    content: "Nairo";
+}
+
+
+
+
+#crew1StocksLeftText:before {
+    content: "9";
+}
+
+#crew1Character {
+    background-image: url('../../CharacterIcons/pikachu.png');
+}
+
+#crew1Port {
+    background-image: url('../../PlayerPorts/PlayerPort1.png');
+}
+
+#crew2NameText:before {
+    content: "Europe";
+}
+
+#crew2Player1NameText:before {
+    content: "Gogoku7";
+    color: yellow;
+}
+#crew2Player2NameText:before {
+    content: "Glutonny";
+    color: red;
+}
+#crew2Player3NameText:before {
+    content: "Mr. R";
+    color: red;
+}
+#crew2Player4NameText:before {
+    content: "G-danzee";
+}
+#crew2Player5NameText:before {
+    content: "Sodrek";
+}
+
+
+
+
+#crew2StocksLeftText:before {
+    content: "9";
+}
+
+#crew2Character {
+    background-image: url('../../CharacterIcons/fox.png');
+}
+
+#crew2Port {
+    background-image: url('../../PlayerPorts/PlayerPort2.png');
+}
+
+#tournamentText:before {
+    content: "Elysium: Yggdrasil";
+}
+
+#extraText:before {
+    content: "Province Crews";
+}
+
+#roundText:before {
+    content: "Round 1";
+}
+
+#bestOfText:before {
+    content: "Best of 1";
+}
