@@ -12,6 +12,6 @@ https://twitter.com/Gogoku7
 # Livestream Production Manager
 Version 0.2.1 was used to manage overlays
 
-Work needs to be done to get these overlays to work with Version 0.3 and 0.4 or 0.5 and up
+JavaScript in GameOverlay.html needs to be changed to get these overlays to work with Version 0.3 and 0.4. And character div styling in Styles.css need to be changed for Version 0.5 and up
 
 Available on: https://github.com/Gogoku7/LivestreamProductionManager
