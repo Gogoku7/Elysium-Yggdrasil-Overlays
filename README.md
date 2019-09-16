@@ -16,7 +16,7 @@ Twitch: https://www.twitch.tv/collections/ZgzaawiTwhUdRw
 YouTube: https://www.youtube.com/playlist?list=PL8CuekBSqvhyzOAMvqZtRIrS4YcnWC7qQ
 
 # Livestream Production Manager
-Version 0.2.1 was used to manage overlays
+Version 0.2.1 was used to manage Overlays
 
 JavaScript in GameOverlay.html needs to be changed to get these overlays to work with Version 0.3 and 0.4. And character div styling in Styles.css need to be changed for Version 0.5 and up
 
