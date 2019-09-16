@@ -9,6 +9,10 @@ https://twitter.com/Elysium_Smash
 
 https://twitter.com/Gogoku7
 
+VODS:
+
+https://www.youtube.com/playlist?list=PL8CuekBSqvhyzOAMvqZtRIrS4YcnWC7qQ
+
 # Livestream Production Manager
 Version 0.2.1 was used to manage overlays
 
